@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Module</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login Module</h2>
+            
+            <!-- Login Form -->
+            <div id="loginForm" class="form-container">
+                <h3>Login</h3>
+                <form onsubmit="handleLogin(event)">
+                    <div class="input-group">
+                        <label for="loginUsername">Username:</label>
+                        <input type="text" id="loginUsername" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <p><a href="#" onclick="showRegisterForm()">Don't have an account? Register</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" class="form-container" style="display: none;">
+                <h3>Register</h3>
+                <form onsubmit="handleRegister(event)">
+                    <div class="input-group">
+                        <label for="registerUsername">Username:</label>
+                        <input type="text" id="registerUsername" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="registerPassword">Password:</label>
+                        <input type="password" id="registerPassword" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+                <p><a href="#" onclick="showLoginForm()">Already have an account? Login</a></p>
+            </div>
+
+            <!-- Dashboard (shown after login) -->
+            <div id="dashboard" class="form-container" style="display: none;">
+                <h3>Welcome, <span id="currentUser"></span>!</h3>
+                <p>You are successfully logged in.</p>
+                <div class="button-group">
+                    <button onclick="showChangePasswordForm()">Change Password</button>
+                    <button onclick="handleLogout()">Logout</button>
+                </div>
+            </div>
+
+            <!-- Change Password Form -->
+            <div id="changePasswordForm" class="form-container" style="display: none;">
+                <h3>Change Password</h3>
+                <form onsubmit="handleChangePassword(event)">
+                    <div class="input-group">
+                        <label for="currentPassword">Current Password:</label>
+                        <input type="password" id="currentPassword" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="newPassword">New Password:</label>
+                        <input type="password" id="newPassword" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmNewPassword">Confirm New Password:</label>
+                        <input type="password" id="confirmNewPassword" required>
+                    </div>
+                    <button type="submit">Change Password</button>
+                </form>
+                <p><a href="#" onclick="showDashboard()">Back to Dashboard</a></p>
+            </div>
+
+            <!-- Message Area -->
+            <div id="messageArea" class="message-area"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

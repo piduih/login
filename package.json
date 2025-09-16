@@ -1,0 +1,16 @@
+{
+  "name": "login-module",
+  "version": "1.0.0",
+  "description": "A simple login module with authentication functionality",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["login", "authentication", "module"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
