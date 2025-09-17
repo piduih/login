@@ -1,0 +1,17 @@
+# Ignore SQLite DB and other runtime files
+config/app.db
+*.db
+tmp_*
+cookiejar.txt
+tmp_cookies.txt
+text/email_log.txt
+
+# OS and editor files
+Thumbs.db
+.DS_Store
+*.log
+*.swp
+*.swo
+
+# VS Code workspace
+*.code-workspace
