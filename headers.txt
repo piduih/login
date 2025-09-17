@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Host: localhost:8000
+Date: Wed, 17 Sep 2025 01:55:01 GMT
+Connection: close
+X-Powered-By: PHP/8.2.12
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: application/json
+

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XRemind - Auth</title>
+        <meta name="csrf-token" content="123fb30e51843dc2dd52d8f829ca890206f3a036f215e84d">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-cu5X1VZJ7Qq+q1Qk6v8mQwWm3aKp0Vf2oGq8lGxG7Pm1Zl8Z9f7cQd6l9z9Kc5q2" crossorigin="anonymous">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">XRemind</a>
+    </div>
+  </nav>
+  <main class="container py-4">
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h2>Signup</h2>
+    <div id="auth-alert"></div>
+    <form id="signup-form">
+      <input type="hidden" name="csrf_token" value="123fb30e51843dc2dd52d8f829ca890206f3a036f215e84d">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+        <div class="mt-2">
+          <div class="progress" style="height:8px;"><div id="pw-strength-bar" class="progress-bar" role="progressbar" style="width:0%"></div></div>
+          <small id="pw-strength-text" class="form-text text-muted"></small>
+          <ul id="pw-suggestions" class="list-unstyled small mt-1 text-muted"></ul>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Create account</button>
+      <a href="/auth/login.php" class="btn btn-link">Login</a>
+    </form>
+  </div>
+</div>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-o88AwfM7Nqd5n2r3t2Z3a0nK3Q2K6cK8p8I6w9x0c6I=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-a1B2c3D4e5F6g7H8i9J0kL1M2n3O4p5Q6r7S8t9U0v1W2x3Y4z5A6b7C8d9E0f1G" crossorigin="anonymous"></script>
+  <script src="/assets/js/auth.js"></script>
+
+  <!-- Toast container -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080">
+    <div id="auth-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" id="toast-title">Notice</strong>
+        <small class="text-muted">now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="toast-body"></div>
+    </div>
+  </div>
+
+  <!-- Modal placeholder (can be used later) -->
+  <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/* assets/css/style.css */
+body { padding-top: 1rem; }
+
+#pw-suggestions li { line-height: 1.2; }
+#pw-strength-text { display: block; margin-top: .25rem; }

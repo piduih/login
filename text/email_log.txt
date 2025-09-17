@@ -1,0 +1,12 @@
+[2025-09-17T03:25:08+02:00] To:int_test_ae4a73@example.test Subject:Password reset
+Click the link to reset your password: http://localhost:8000/api/auth/reset.php?token=1fc526df176be5d4744e726dc9be3787f0a2cad9d0981273
+
+[2025-09-17T03:25:48+02:00] To:int_test_250770@example.test Subject:Password reset
+Click the link to reset your password: http://localhost:8000/api/auth/reset.php?token=24b4dd689fb070932ddfcfd067ecace617a49fa4f62639a2
+
+[2025-09-17T03:27:54+02:00] To:int_test_43dbff@example.test Subject:Password reset
+Click the link to reset your password: http://localhost:8000/api/auth/reset.php?token=37718bc80436357c672021d3caa6e390ce649aeaf71ccd4f
+
+[2025-09-17T03:29:21+02:00] To:int_test_f262f3@example.test Subject:Password reset
+Click the link to reset your password: http://localhost:8000/api/auth/reset.php?token=22868757826673c32cdc99cd8b9e1ed533a558e88bf8f263
+
